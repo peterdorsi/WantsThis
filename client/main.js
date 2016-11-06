@@ -1,0 +1,13 @@
+import Vue from 'vue';
+import App from './App';
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+import router from './router'
+
+// Settings
+Vue.config.debug = process.env.NODE_ENV !== 'production'
+
+/* eslint-disable no-new */
+new Vue(Vue.util.extend({ router }, App)).$mount('app')

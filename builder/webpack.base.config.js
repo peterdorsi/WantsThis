@@ -11,7 +11,7 @@ const PUBLIC_ASSETS_PATH = path.resolve(PROJECT_ROOT, 'client/assets')
 module.exports = {
   entry: {
     app: "./client/main.js",
-    vendor: ['jquery', 'vue', 'vue-router']
+    vendor: ['vue', 'vue-router']
   },
   output: {
     path: config.build.assetsRoot,
@@ -23,8 +23,7 @@ module.exports = {
     alias: {
       'client': path.resolve(PROJECT_ROOT, 'client'),
       'assets': PUBLIC_ASSETS_PATH,
-      'components': path.resolve(PROJECT_ROOT, 'client/components'),
-      'jquery': "jquery/src/jquery"
+      'components': path.resolve(PROJECT_ROOT, 'client/components')
     }
   },
   resolveLoader: {
@@ -48,9 +47,7 @@ module.exports = {
       { test: /\.js$/, include: [path.resolve('./client')], loader: 'babel', query: {
           cacheDirectory: true
       }},
-      { test: /\.vue$/, loader: 'vue', exclude: /node_modules/ },
-      { test: require.resolve('jquery'), loader: 'expose?jQuery'},
-      { test: /jquery[\\\/]src[\\\/]selector\.js$/, loader: 'amd-define-factory-patcher-loader' }
+      { test: /\.vue$/, loader: 'vue', exclude: /node_modules/ }
     ]
   },
   postcss: function () {
