@@ -16,7 +16,7 @@
     "stage": "NODE_ENV=stage nodemon server | ./node_modules/.bin/bunyan",
     "prod": "NODE_ENV=production nodemon server | ./node_modules/.bin/bunyan",
     "build": "NODE_ENV=production webpack --config builder/webpack.production.config.js -p",
-    "lint": "eslint --ext .js, .vue client; exit 0"
+    "lint": "eslint --ext .js,.vue client; exit 0"
   },
   "dependencies": {
     "body-parser": "^1.15.2",

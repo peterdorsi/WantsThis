@@ -13,7 +13,7 @@ export default {
     }
   },
   beforeMount () {
-    //console.log(this.$store)
+    // console.log(this.$store)
   }
 }
 </script>

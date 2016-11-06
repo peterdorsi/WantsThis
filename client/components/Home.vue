@@ -6,22 +6,22 @@
 
 <script>
 export default {
-    name: 'Home',
-    data () {
-        return {
-            heading: ''
-        }
-    },
-    mounted: function() {
-        this.fetchHeading();
-    },
-    methods: {
-        fetchHeading: function() {
-            this.$http.get('api/message').then(function (response) {
-                this.heading = response.data
-            });
-        },
+  name: 'Home',
+  data () {
+    return {
+      heading: ''
     }
+  },
+  mounted: function () {
+    this.fetchHeading()
+  },
+  methods: {
+    fetchHeading: function () {
+      this.$http.get('api/message').then(function (response) {
+        this.heading = response.data
+      })
+    }
+  }
 }
 </script>
 

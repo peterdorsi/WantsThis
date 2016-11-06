@@ -14,9 +14,7 @@
   </div>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style>
     body {
@@ -46,5 +44,4 @@
     .fade-enter, .fade-leave-active {
         opacity: 0;
     }
-
 </style>
