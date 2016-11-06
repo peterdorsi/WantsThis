@@ -1,10 +1,11 @@
 import Vue from 'vue';
 import App from './App';
 import VueRouter from 'vue-router'
+import router from './router'
+import './lib/resources';
+import './lib/filters';
 
 Vue.use(VueRouter)
-
-import router from './router'
 
 // Settings
 Vue.config.debug = process.env.NODE_ENV !== 'production'

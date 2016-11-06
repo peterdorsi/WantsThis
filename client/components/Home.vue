@@ -1,19 +1,27 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <ul>
-        <li><router-link to="/login">/</router-link></li>
-    </ul>
+    <h1>{{ heading }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      msg: 'WantsThis.com'
+    name: 'Home',
+    data () {
+        return {
+            heading: ''
+        }
+    },
+    mounted: function() {
+        this.fetchHeading();
+    },
+    methods: {
+        fetchHeading: function() {
+            this.$http.get('api/message').then(function (response) {
+                this.heading = response.data
+            });
+        },
     }
-  }
 }
 </script>
 

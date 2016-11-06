@@ -8,7 +8,7 @@ const Joi = require('joi')
 const router = express.Router()
 
 // Test...
-router.get('/', function (req, res) {
+router.get('/message', function (req, res) {
   res.send('hello world')
 })
 
