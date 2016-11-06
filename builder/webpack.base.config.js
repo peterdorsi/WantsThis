@@ -67,6 +67,9 @@ module.exports = {
   babel: {
     presets: ['es2015']
   },
+  eslint: {
+    formatter: require('eslint-friendly-formatter')
+  },
   vue: {
     loaders: utils.cssLoaders()
   }

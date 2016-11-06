@@ -16,14 +16,16 @@
 
 <script></script>
 
-<style>
+<style lang="scss">
+    $base-color: #34495e;
+
     body {
         font-family: Roboto, Helvetica, sans-serif;
         font-size: 15px;
         background-color: lighten(#eceef1, 30%);
         margin: 0;
         padding-top: 55px;
-        color: #34495e;
+        color: $base-color;
     }
 
     .logo {
@@ -31,7 +33,7 @@
     }
 
     a {
-        color: #34495e;
+        color: $base-color;
         text-decoration: none;
     }
 

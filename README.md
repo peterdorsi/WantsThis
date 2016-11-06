@@ -9,6 +9,9 @@ Base app using Vue.js 2.0, Express, vue-router, vue-resource, ES6 w/ babel
 # install dependencies
 yarn install
 
+# check files for errors
+npm run lint
+
 # serve in dev mode, with hot reload at localhost:8080
 npm run dev
 
