@@ -1,9 +1,9 @@
-import Vue from 'vue';
-import App from './App';
+import Vue from 'vue'
+import App from './App'
 import VueRouter from 'vue-router'
 import router from './router'
-import './lib/resources';
-import './lib/filters';
+import './lib/resources'
+import './lib/filters'
 
 Vue.use(VueRouter)
 

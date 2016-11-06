@@ -14,4 +14,4 @@ Vue.http.interceptors.push((request, next) => {
   })
 })
 
-//export const Account = Vue.resource(API_ROOT + '/accounts/{id}')
+// export const Account = Vue.resource(API_ROOT + '/accounts/{id}')
